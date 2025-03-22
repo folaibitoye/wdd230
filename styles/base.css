@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+h1{
+    font-weight: 700;
+}
+  h1, h2, h3 {
+    text-align: center;
+    color: var(--primary-color);
+}
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav a{
+    display : block;
+    color:#f9f9f9
+    text-align : center;
+    padding : .5rem;
+    text-decoration:none;
+  }
+   
+  nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+  } 
+
+  nav .active{
+    background-color:rgba(0,0,0,0.3) ;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
