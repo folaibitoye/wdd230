@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Folahan Peter Ibitoye] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Folahan Peter Ibitoye | Course Assignment Portal">
+    <meta name="author" content="[Folahan Peter Ibitoye]">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Profile Photo"> 
+        <span>Folahan Peter Ibitoye]</span>  
+           
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="join-page">
+        <section class="form-section">
+          <h1>Join the Chamber</h1>
+          <form method="get" action="thankyou.html">
+            <label>First Name:
+              <input type="text" name="fname" id="fname" required>
+            </label>
+    
+            <label>Last Name:
+              <input type="text" name="lname" id="lname" required>
+            </label>
+    
+            <label>Title/Position:
+              <input type="text" name="title" id="title" pattern="[A-Za-z\-\s]{7,}">
+            </label>
+    
+            <label>Email:
+              <input type="email" name="email" id="email" required placeholder="example@email.com">
+            </label>
+    
+            <label>Phone Number:
+              <input type="tel" name="phone" id="phone" required>
+            </label>
+    
+            <label>Business/Organization Name:
+              <input type="text" name="organization" id="organization" required>
+            </label>
+    
+            <label>Membership Level:
+              <select name="membership" id="membership">
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+    
+            <label>Business Description:
+              <textarea name="description" id="description" rows="5"></textarea>
+            </label>
+    
+            <input type="hidden" name="timestamp" id="timestamp">
+    
+            <input type="submit" value="Join the Chamber">
+          </form>
+        </section>
+    
+        <aside class="membership-benefits">
+          <h2>Membership Benefits</h2>
+          <ul>
+            <li><strong>NP Membership:</strong> Access to newsletter and event calendar.</li>
+            <li><strong>Bronze:</strong> Event invites, business listing.</li>
+            <li><strong>Silver:</strong> Bronze benefits + ad placement, featured member highlights.</li>
+            <li><strong>Gold:</strong> Silver benefits + premium event access, exclusive trainings.</li>
+          </ul>
+        </aside>
+      </main>
+    
+      <footer>
+        <p>&copy; <span id="year"></span> Your Name | WDD 230 Chamber Project | Last Modified: <span id="lastModified"></span></p>
+      </footer>
+    
+      <script>
+        // Dynamic timestamp field
+        document.getElementById('timestamp').value = Date.now();
+    
+        // Footer updates
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+      </script>
+      <script src="scripts/timestamp.js"></script>
+</body>
+</html>

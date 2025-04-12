@@ -1,0 +1,15 @@
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    nav ul {
+      justify-content: flex-start;
+    }
+  
+    .spotlights {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .spotlight {
+      flex: 1;
+    }
+  }
