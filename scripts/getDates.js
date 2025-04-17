@@ -1,7 +1,5 @@
-/ Get the current year
-const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
+// Get current year for copyright
+document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Get the last modified date
-const lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = lastModified;
+// Get last modified date
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;

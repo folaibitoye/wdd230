@@ -1,15 +1,19 @@
-/* Media Queries for Larger Screens */
+/* Styles for larger screens */
 @media (min-width: 768px) {
-    nav ul {
-      justify-content: flex-start;
-    }
-  
-    .spotlights {
+  nav ul {
       display: flex;
-      gap: 20px;
-    }
-  
-    .spotlight {
-      flex: 1;
-    }
+      justify-content: space-around;
   }
+
+  main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+  }
+
+  .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+}
